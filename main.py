@@ -8,7 +8,7 @@ from fake_useragent import UserAgent
 import time
 import csv
 
-# 1- DEMARRER CHROME AVEC LES BONNES OPTIONS
+1- DEMARRER CHROME AVEC LES BONNES OPTIONS
 options = Options()
 options.add_experimental_option('useAutomationExtension', False)
 options.add_experimental_option('excludeSwitches', ['enable-automation'])
@@ -32,7 +32,7 @@ options.add_argument(f"user-agent={user_agent}")
 monpilote = webdriver.Chrome(options=options)
 print('Chrome démarré')
 
-# 2- ACCEDER A LA PAGE DE RECHERCHE WIKIPEDIA - URL NECESSAIRE
+2- ACCEDER A LA PAGE DE RECHERCHE WIKIPEDIA - URL NECESSAIRE
 monpilote.get('https://fr.wikipedia.org/')
 time.sleep(2)
 monpilote.get('https://fr.wikipedia.org/wiki/Sp%C3%A9cial:Recherche')
