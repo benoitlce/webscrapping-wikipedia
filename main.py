@@ -33,6 +33,8 @@ monpilote = webdriver.Chrome(options=options)
 print('Chrome démarré')
 
 # 2- ACCEDER A LA PAGE DE RECHERCHE WIKIPEDIA - URL NECESSAIRE
+monpilote.get('https://fr.wikipedia.org/')
+time.sleep(2)
 monpilote.get('https://fr.wikipedia.org/wiki/Sp%C3%A9cial:Recherche')
 print('Navigation page de recherche Wikipedia')
 time.sleep(3)
