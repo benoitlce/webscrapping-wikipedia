@@ -54,7 +54,6 @@ print('Bouton Rechercher cliqué')
 time.sleep(3)
 
 # 7- LIRE UNE LISTE D'ELEMENTS DE LA PAGE - XPATH GENERALISE NECESSAIRE
-# Liste des titres d'articles
 listZoneTitre = WebDriverWait(monpilote, timeout=10).until(expected_conditions.presence_of_all_elements_located((By.XPATH, '//div[@class="mw-search-result-heading"]/a')))
 print('Nombre de résultats trouvés :', len(listZoneTitre))
 
